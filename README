@@ -6,7 +6,7 @@ How to get started:
 
 # Install the gem
 
-- gem install ...
+- sudo gem install tilleryj-CSS-Push
 
 # Get your rails project ready
 

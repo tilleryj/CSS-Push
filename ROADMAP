@@ -1,0 +1,12 @@
+
+Todo:
+
+- pushify should add the config.gem entry to environment.rb
+- an environment variable 'enable_css_push' should determine whether the pushify helper method is a no-op or not
+- pushify should add the enable_css_push environment variable to development.rb
+- daemonize the csspush script, and have it start csspush and juggernaut
+- update the README to be more comprehensive and have decent formatting
+
+Future:
+
+- Make it work in non-rails projects
