@@ -5,10 +5,10 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "CSS-Push"
-    gem.summary = %Q{TODO}
+    gem.summary = "See updates you make to css files appear immediately in all of your browsers without having to refresh."
     gem.email = "tilleryj@gmail.com"
     gem.homepage = "http://github.com/tilleryj/CSS-Push"
-    gem.authors = ["tilleryj"]
+    gem.authors = ["Jason Tillery", "Vishu Ramanathan"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 
