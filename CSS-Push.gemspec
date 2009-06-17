@@ -7,19 +7,32 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jason Tillery", "Vishu Ramanathan"]
   s.date = %q{2009-06-17}
+  s.default_executable = %q{csspush}
   s.email = %q{tilleryj@gmail.com}
+  s.executables = ["csspush", "pushify"]
   s.extra_rdoc_files = [
     "LICENSE",
      "README"
   ]
   s.files = [
-    "CSS-Push.gemspec",
+    ".gitignore",
+     "CSS-Push.gemspec",
      "LICENSE",
      "README",
      "Rakefile",
      "VERSION",
-     "lib/CSS-Push.rb",
-     "spec/CSS-Push_spec.rb",
+     "bin/csspush",
+     "bin/pushify",
+     "lib/css_push.rb",
+     "lib/css_push_server.rb",
+     "install/css_push.js",
+     "install/expressinstall.swf",
+     "install/juggernaut.js",
+     "install/juggernaut.swf",
+     "install/juggernaut.yml",
+     "install/juggernaut_hosts.yml",
+     "install/swfobject.js",
+     "rails/init.rb",
      "spec/spec_helper.rb"
   ]
   s.has_rdoc = true
@@ -29,7 +42,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.1}
   s.summary = %q{See updates you make to css files appear immediately in all of your browsers without having to refresh.}
   s.test_files = [
-    "spec/CSS-Push_spec.rb",
+    "spec/css_push_spec.rb",
      "spec/spec_helper.rb"
   ]
 
