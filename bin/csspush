@@ -1,5 +1,17 @@
 #!/usr/bin/env ruby
+require 'daemons'
+require 'juggernaut'
 
 require File.join(File.dirname(__FILE__), "..", "lib", "css_push_server")
 
-CSSPushServer.run
+# TODO: HACK
+pids = File.join('tmp', 'pids')
+pid = File.join(pids, 'juggernaut.pid')
+if ARGV.include?('start')
+  system("juggernaut -cconfig/juggernaut.yml -d -P #{pid}")
+else
+  system("kill #{File.read(pid)}")
+  system("rm #{pid}")
+end
+
+Daemons.run_proc(File.join(pids, 'css_push_server.rb')) { CSSPushServer.run }

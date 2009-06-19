@@ -5,6 +5,11 @@ Gem::Specification.new do |s|
   s.version = "0.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+
+  s.add_dependency('json')
+  s.add_dependency('juggernaut')
+  s.add_dependency('daemons')
+
   s.authors = ["Jason Tillery", "Vishu Ramanathan"]
   s.date = %q{2009-06-17}
   s.default_executable = %q{csspush}
