@@ -21,7 +21,7 @@ FileUtils.cp(File.join(install_from, "juggernaut_hosts.yml"), File.join(install_
 FileUtils.cp(File.join(install_from, "juggernaut.yml"), File.join(install_to, "config")) unless File.exist?(File.join(install_to, "config", "juggernaut.yml"))
 
 File.open('config/environments/development.rb', 'a') do |f|
-  f.write("\n\nconfig.gem 'CSS-Push', :lib => 'css_push'\n")
+  f.write("\n\nconfig.gem 'tilleryj-CSS-Push', :lib => 'css_push'\n")
 end
 FileUtils.cp(File.join(install_from, "css_push_initializer.rb"), File.join(install_to, "config", "initializers")) 
 

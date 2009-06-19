@@ -1,7 +1,5 @@
 
 Todo:
-- daemonize the csspush script, and have it start csspush and juggernaut
-- update the README to be more comprehensive and have decent formatting
 - uninstall script
 
 Future:
@@ -11,3 +9,5 @@ Future:
 Completed at ORD Sessions (June 18, 2009)
 - add gem configuration to rails from setup script, pushify.rb
 - for production, recognize environments where css push is not installed & make pushify helper method an empty string
+- daemonize the csspush script, and have it start csspush and juggernaut
+- update the README to be more comprehensive and have decent formatting
