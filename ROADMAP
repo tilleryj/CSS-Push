@@ -6,6 +6,8 @@ Todo:
 - pushify should add the enable_css_push environment variable to development.rb
 - daemonize the csspush script, and have it start csspush and juggernaut
 - update the README to be more comprehensive and have decent formatting
+- uninstall script
+- it's lame that you have to install the gem on the production environment
 
 Future:
 

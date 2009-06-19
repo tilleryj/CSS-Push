@@ -4,6 +4,10 @@ require "erb"
 require "json"
 
 module CSSPush # :nodoc:
+  def self.install
+    ActionView::Base.send(:include, CSSPush::PushHelper)
+    ActionView::Helpers::AssetTagHelper.register_javascript_expansion :css_push => ['css_push/swfobject', 'css_push/juggernaut', 'css_push/css_push']
+  end
   module PushHelper
 
     def pushify(options = {})
@@ -22,7 +26,7 @@ module CSSPush # :nodoc:
         :flash_color          => "#fff",
         :swf_name             => "juggernaut_flash",
         :bridge_name          => "juggernaut",
-        :debug                => (RAILS_ENV == 'development'),
+        :debug                => false,
         :reconnect_attempts   => 3,
         :reconnect_intervals  => 3
       }.merge(options)
