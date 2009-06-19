@@ -10,7 +10,7 @@ See updates you make to css files appear immediately in all of your browsers wit
 ## Installing
 
     # Install the gem
-	<code>sudo gem install tilleryj-CSS-Push</code>
+	sudo gem install tilleryj-CSS-Push
     # Run the pushify script to install css push into your rails app 
 	pushify
 	# call pushify from your view. Add this in the head of a view _after prototype.js_
