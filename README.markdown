@@ -18,7 +18,8 @@ See updates you make to css files appear immediately in all of your browsers wit
 
 ## Start Servers
 	# Start servers with css_push
-	css_push
+	csspush start
+	# you stop them later with 'csspush stop'
 
 
 # That's it
