@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
      "lib/css_push.rb",
      "lib/css_push_server.rb",
      "install/css_push.js",
+     "install/css_push_initializer.rb",
      "install/expressinstall.swf",
      "install/juggernaut.js",
      "install/juggernaut.swf",
