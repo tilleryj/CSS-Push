@@ -5,12 +5,12 @@ See updates you make to css files appear immediately in all of your browsers wit
 * Will not work in windows development environments 
 * Currently is only available as a plugin to rails
 
-# Getting Starged
+# Getting Started
 
 ## Installing
 
     # Install the gem
-	sudo gem install tilleryj-CSS-Push
+	<code>sudo gem install tilleryj-CSS-Push</code>
     # Run the pushify script to install css push into your rails app 
 	pushify
 	# call pushify from your view. Add this in the head of a view _after prototype.js_
