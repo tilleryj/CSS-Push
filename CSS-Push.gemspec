@@ -17,13 +17,13 @@ Gem::Specification.new do |s|
   s.executables = ["csspush", "pushify"]
   s.extra_rdoc_files = [
     "LICENSE",
-     "README"
+     "README.markdown"
   ]
   s.files = [
     ".gitignore",
      "CSS-Push.gemspec",
      "LICENSE",
-     "README",
+     "README.markdown",
      "Rakefile",
      "VERSION",
      "bin/csspush",
