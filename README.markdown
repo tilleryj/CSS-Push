@@ -2,6 +2,8 @@
 See updates you make to css files appear immediately in all of your browsers without having to refresh.
 
 # Limitations
+* Install from source - github no longer hosting this gem
+* Uses prototype.js for some trivial stuff. (consider breaking this dependency)
 * Will not work in windows development environments 
 * Currently is only available as a plugin to rails
 
@@ -9,7 +11,8 @@ See updates you make to css files appear immediately in all of your browsers wit
 
 ## Installing
 
-    # Install the gem
+    # -Install the gem-
+    # THIS WON'T WORK - github stopped serving this gem
 	sudo gem install tilleryj-CSS-Push
     # Run the pushify script to install css push into your rails app 
 	pushify
